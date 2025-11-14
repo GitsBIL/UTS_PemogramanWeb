@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nabil Putra — Mahasiswa & Beginner Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Profil Nabil Putra — Mahasiswa Teknik Informatika yang sedang belajar Data Analytics. Contoh proyek: data cleaning, dashboard, analisis performa." />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/foto-profil.jpg" alt="Foto Profil" class="logo">
+        <div>
+          <h1 class="brand-name">Nabil Putra</h1>
+          <p class="brand-sub">Mahasiswa Teknik Informatika — Beginner Data Analyst</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="contact.html">Kontak</a>
+        <button id="toggleThemeBtn" class="btn small ghost" aria-pressed="false">Ubah Tema</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Halo, saya Nabil Putra</h2>
+        <p class="muted lead">Saya merupakan mahasiswa Teknik Informatika yang sedang memperdalam kompetensi dasar dalam Data Analytics. Minat utama saya mencakup pembersihan data (data cleaning), eksplorasi data (EDA), visualisasi, dan pembuatan dashboard sederhana.</p>
+
+        <div class="cta">
+          <a class="btn" href="portfolio.html">Lihat Portofolio</a>
+          <a class="btn ghost" href="about.html">Pelajari Tentang Saya</a>
+        </div>
+
+        <ul class="quick-info">
+          <li><strong>Keahlian utama:</strong> Python (Pandas), SQL, Excel</li>
+          <li><strong>Alat:</strong> Matplotlib, Seaborn, Tableau (pengenalan)</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-frame">
+          <img src="img/foto-profil.jpg" alt="Foto Profil Nabil" class="profile-large">
+          <div class="accent-ribbon">Beginner Data Analyst</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="features container" aria-labelledby="highlights-heading">
+      <h3 id="highlights-heading" style="display:none">Ringkasan</h3>
+      <article class="card">
+        <h3>Informasi singkat</h3>
+        <p>Nama: <strong>Nabil Putra Alamsyah</strong><br>Program studi: Teknik Informatika</p>
+      </article>
+
+      <article class="card">
+        <h3>Kompetensi dasar</h3>
+        <ul>
+          <li>Pengolahan data menggunakan Python (Pandas, NumPy)</li>
+          <li>Query basis data menggunakan SQL</li>
+          <li>Analisis deskriptif dan visualisasi data</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Fitur interaktif</h3>
+        <p>Situs ini dilengkapi dengan penggantian tema (tema terang/gelap), jam waktu nyata, tampilan modal untuk detail proyek, dan formulir kontak dengan validasi dasar.</p>
+      </article>
+    </section>
+
+    <!-- Clock -->
+    <section class="container clock">
+      <div id="clockDisplay" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Nabil Putra. Semua hak dilindungi.</p>
+      <a href="#top" id="backToTop" class="back-to-top" aria-label="Kembali ke atas">▲</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak — Nabil Putra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Formulir kontak untuk keperluan kolaborasi, pertanyaan proyek, atau konsultasi singkat." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/foto-profil.jpg" alt="Foto Profil" class="logo">
+        <div>
+          <h1 class="brand-name">Nabil Putra</h1>
+          <p class="brand-sub">Mahasiswa Teknik Informatika — Beginner Data Analyst</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="contact.html" class="active">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Kontak</h2>
+    <p class="muted">Silakan gunakan formulir berikut untuk menghubungi saya terkait proyek, kolaborasi, atau pertanyaan akademik.</p>
+
+    <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+      <label for="nama">Nama</label>
+      <input id="nama" name="nama" required placeholder="Nama lengkap">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="email@contoh.com">
+
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" name="pesan" rows="6" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Kirim</button>
+        <button type="button" class="btn ghost" onclick="resetForm()">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year4"></span> Nabil Putra. Semua hak dilindungi.</p>
+      <a href="index.html">Kembali ke Beranda</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
